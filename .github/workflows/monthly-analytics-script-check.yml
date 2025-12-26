@@ -24,7 +24,7 @@ jobs:
           if cmp -s latest_script.js workflows/monthly-analytics-script-check/script.js; then
             echo "No changes detected."
           else
-            echo "Change detected. Updating script in repository. Please update the inline script in Obsidian."
+            echo "Change detected. Updating script in repository. Please update the inline script in Obsidian and Bear Blog."
             mv latest_script.js workflows/monthly-analytics-script-check/script.js
 
             git config user.name "github-actions[bot]"
